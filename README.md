@@ -3,10 +3,12 @@ Pomelo i81n plugin.
 
 # How To
 ## Locale file directory
+  You Set path param， set locale file path.
+
 ```
 + app
 + config
-+ locale    // << Locale file is here
++ locale    // << default path Locale file is here
   - en-US.js
   - zh-CN.js
 ```
@@ -30,8 +32,9 @@ const i81n = require('@sex-pomelo/pomelo-i18n');
 app.configure('production|development' ,'!master',function() {
     app.use(i81n,{
         i81n:{
-            locale: ['en-US','zh-CN'],   // use locale, optional
-            default: 'en-US'             // default locale, required
+          path: 'app/locale',          // set locale path，optional
+          locale: ['en-US','zh-CN'],   // use locale, optional
+          default: 'en-US'             // default locale, required
         }
     });
 });
