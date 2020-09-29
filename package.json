@@ -1,0 +1,20 @@
+{
+  "name": "@sex-pomelo/pomelo-i18n",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "description": "sex pomelo i18n plugin",
+  "keywords": [
+    "pomelo",
+    "sex-pomelo",
+    "game",
+    "i81n"
+  ],
+  "maintainers": [
+    {
+      "name": "shudingbo",
+      "email": "shudingbo@qq.com",
+      "url": "https://github.com/sex-pomelo/pomelo-i18n"
+    }
+  ]
+}
