@@ -1,6 +1,14 @@
 {
   "name": "@sex-pomelo/pomelo-i18n",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "homepage": "https://github.com/sex-pomelo/pomelo-i18n",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sex-pomelo/pomelo-i18n"
+  },
+  "bugs": {
+    "url": "https://github.com/sex-pomelo/pomelo-i18n/issues"
+  },
   "dependencies": {
   },
   "description": "sex pomelo i18n plugin",
@@ -8,7 +16,7 @@
     "pomelo",
     "sex-pomelo",
     "game",
-    "i81n"
+    "i18n"
   ],
   "maintainers": [
     {

@@ -1,9 +1,9 @@
-# pomelo-i81n
-Pomelo i81n plugin.
+# pomelo-i18n
+Pomelo i18n plugin.
 
 # How To
 ## Locale file directory
-  You Set path param， set locale file path.
+  You Set path param, set locale file path.
 
 ```
 + app
@@ -27,12 +27,12 @@ module.exports = {
 
 ### Register plugin to pomelo
 ``` js
-const i81n = require('@sex-pomelo/pomelo-i18n'); 
+const i18n = require('@sex-pomelo/pomelo-i18n'); 
 ...
 app.configure('production|development' ,'!master',function() {
-    app.use(i81n,{
-        i81n:{
-          path: 'app/locale',          // set locale path，optional
+    app.use(i18n,{
+        i18n:{
+          path: 'app/locale',          // set locale path，optional, default <root>/locale
           locale: ['en-US','zh-CN'],   // use locale, optional
           default: 'en-US'             // default locale, required
         }
@@ -54,7 +54,29 @@ app.configure('production|development' ,'!master',function() {
 
   app.tr('Hello {0}! My name is {1}.', ['foo', 'bar']);
 
+  app.tr1('zh-CN','Hello {0}! My name is {1}.', ['foo', 'bar']);
+
 ```
+
+## API
+### tr
+
+app.tr( msgkey, ...);
+
+ * msgKey, String, key define in <language>.js
+ * ..., Other param
+
+### tr1
+  
+app.tr1( lang, msgKey, ... );
+
+ * lang, String, locale String
+ * msgKey, String, key define in <language>.js
+ * ..., Other param
+
+
+
+
 
 
 
